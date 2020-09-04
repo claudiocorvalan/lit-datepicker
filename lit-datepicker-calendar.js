@@ -19,10 +19,11 @@ import subMonths from 'date-fns/esm/subMonths';
 import subYears from 'date-fns/esm/subYears';
 import enUS from 'date-fns/esm/locale/en-US';
 import fr from 'date-fns/esm/locale/fr';
+import es from 'date-fns/esm/locale/es';
 import { ironFlexLayoutAlignTheme, ironFlexLayoutTheme } from './iron-flex-import';
 import './lit-datepicker-cell';
 
-const locales = { en: enUS, fr };
+const locales = { en: enUS, fr, es };
 
 class LitDatepickerCalendar extends LitElement {
   static get styles() {
