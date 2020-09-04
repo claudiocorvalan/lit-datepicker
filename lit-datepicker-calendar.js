@@ -369,7 +369,9 @@ class LitDatepickerCalendar extends LitElement {
         this.dateTo = null;
         this.hoveredDate = undefined;
         this.dispatchEvent(new CustomEvent('hovered-date-changed', { detail: { value: this.hoveredDate } }));
-      } else if (!this.dateFrom || (this.dateFrom && date < this.dateFrom) || (this.maxRange > 0 && date - this.dateFrom > this.maxRange * 24 * 3600)) {
+      } else if (!this.dateFrom
+        || (this.dateFrom && date < this.dateFrom)
+        || (this.maxRange > 0 && date - this.dateFrom > this.maxRange * 24 * 3600)) {
         this.dateFrom = date;
       } else if (!this.dateTo || (this.dateTo && date > this.dateTo)) {
         this.dateTo = date;
