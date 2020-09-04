@@ -143,8 +143,8 @@ class LitDatepicker extends LitDatepickerBehavior(LitElement) {
        * Default is current month.
        */
       month: { type: String },
-      _monthPlus: { type: String },
-      _yearPlus: { type: Number },
+      monthPlus: { type: String },
+      yearPlus: { type: Number },
       /**
        * Set year.
        * Default is current year.
