@@ -1,5 +1,5 @@
 {
-  "description": "lit-datepicker provides a simple datepicker with range.",
+  "description": "Fork @doubletrade/lit-datepicker provides a simple datepicker with range.",
   "keywords": [
     "web-component",
     "web-components",
@@ -7,12 +7,13 @@
     "datepicker",
     "range"
   ],
-  "name": "@doubletrade/lit-datepicker",
+  "name": "crca-lit-datepicker",
   "main": "lit-datepicker.js",
   "author": "Julien Rousseau <RoXuS>",
-  "version": "0.5.1",
+  "version": "0.5.3",
   "devDependencies": {
     "babel-eslint": "10.0.3",
+    "es-dev-server": "^1.57.4",
     "eslint": "6.3.0",
     "eslint-config-airbnb-base": "14.0.0",
     "eslint-plugin-import": "2.18.2",
@@ -20,7 +21,8 @@
   },
   "scripts": {
     "lint:javascript": "eslint . --ext js,html --ignore-path .gitignore",
-    "install:dependencies": "polymer install --variants"
+    "install:dependencies": "polymer install --variants",
+    "start": "es-dev-server --app-index demo/index.html --node-resolve --open --watch"
   },
   "resolutions": {
     "inherits": "2.0.3",
@@ -48,6 +50,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/DoubleTrade/lit-datepicker"
+    "url": "https://github.com/claudiocorvalan/lit-datepicker"
   }
 }
